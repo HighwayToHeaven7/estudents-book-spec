@@ -5,5 +5,11 @@ info:
   version: 1.0.0
 
 tags:
-  - name: "tag"
+  - name: "user-query"
+
+paths:
+  /users/new:
+    $ref: paths/users/users.yaml
+
+
   
