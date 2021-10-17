@@ -5,11 +5,15 @@ info:
   version: 1.0.0
 
 tags:
-  - name: "user-query"
+  - name: 'user-query'
+  - name: 'subject-command'
 
 paths:
   /users/new:
     $ref: paths/users/users.yaml
+
+  /subjects:
+    $ref: paths/subjects/subjects.yaml
 
 
   

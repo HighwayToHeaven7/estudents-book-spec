@@ -1,0 +1,6 @@
+SubjectCreateResponse:
+  type: object
+  properties:
+    subjectName:
+      type: string
+      #todo ..
