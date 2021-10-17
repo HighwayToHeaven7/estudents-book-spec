@@ -1,0 +1,9 @@
+openapi: 3.0.2
+info:
+  title: Title
+  description: Title
+  version: 1.0.0
+
+tags:
+  - name: "tag"
+  
