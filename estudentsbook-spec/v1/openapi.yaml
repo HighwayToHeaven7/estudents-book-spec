@@ -11,6 +11,8 @@ tags:
 paths:
   /users/new:
     $ref: paths/users/users.yaml
+  /users/groups:
+    $ref: paths/users/users-in-groups.yaml
 
   /subjects:
     $ref: paths/subjects/subjects.yaml

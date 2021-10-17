@@ -1,0 +1,13 @@
+get:
+  summary: Get list of grups with all students in
+  tags:
+    - user-query
+  operationId: get_list_of_grups_with_students
+  responses:
+    '200':
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../../models/user/students/students-in-group.yaml#/GroupWithStudentsResponse'

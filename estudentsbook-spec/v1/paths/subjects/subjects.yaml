@@ -16,6 +16,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../../models/subject/subject-create-response.yaml#/SubjectCreateResponse'
+            $ref: '../../models/subject/subject.yaml#/Subject'
     '409':
       description: Not created due some validation error

@@ -1,0 +1,4 @@
+Student:
+  type: object
+  allOf:
+    - $ref: '../user.yaml#/User'
