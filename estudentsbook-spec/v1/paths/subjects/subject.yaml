@@ -1,0 +1,32 @@
+put:
+  tags:
+    - subject-command
+  description: Update entire subject
+  operationId: update_subject_by_id
+  parameters:
+    - name: subject-uuid
+      in: path
+      required: true
+      description: The uuid of subject to update
+      schema:
+        type: string
+        format: uuid
+  requestBody:
+    description: DTO organizational structure with data to update
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/subject/subject-update-request.yaml#/SubjectUpdateRequest'
+    required: true
+  responses:
+    '200':
+      description: Successfully updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/subject/subject.yaml#/Subject'
+    '404':
+      description: Not found subject with specific uuid
+    '409':
+      description: Resource not updated due some validation error
+

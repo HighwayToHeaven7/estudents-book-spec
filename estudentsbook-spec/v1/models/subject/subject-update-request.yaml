@@ -1,0 +1,4 @@
+SubjectUpdateRequest:
+  description: dto type used to update subject.
+  allOf:
+    - $ref: './subject-create-request.yaml#/SubjectCreateRequest'

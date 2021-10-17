@@ -1,0 +1,5 @@
+Subject:
+  type: object
+  properties:
+    subjectName:
+      type: string
