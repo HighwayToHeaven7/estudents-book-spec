@@ -6,4 +6,4 @@ GroupWithStudentsResponse:
     students:
       type: array
       items:
-        - $ref: './student.yaml#/Student'
+        $ref: './student.yaml#/Student'

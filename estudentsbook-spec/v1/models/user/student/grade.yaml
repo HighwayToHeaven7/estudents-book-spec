@@ -1,0 +1,10 @@
+Grade:
+  type: object
+  properties:
+    id:
+      type: string
+      format: uuid
+    grade:
+      type: number
+    title:
+      type: string

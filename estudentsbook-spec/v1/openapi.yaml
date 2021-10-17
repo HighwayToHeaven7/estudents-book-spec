@@ -7,12 +7,17 @@ info:
 tags:
   - name: 'user-query'
   - name: 'subject-command'
+  - name: 'students-query'
+  - name: 'students-command'
 
 paths:
   /users/new:
     $ref: paths/users/users.yaml
-  /users/groups:
-    $ref: paths/users/users-in-groups.yaml
+
+  /students/groups:
+    $ref: paths/users/students/students-in-groups.yaml
+  /students/student-uuid/grade/grade-uuid:
+    $ref: paths/users/students/grade.yaml
 
   /subjects:
     $ref: paths/subjects/subjects.yaml

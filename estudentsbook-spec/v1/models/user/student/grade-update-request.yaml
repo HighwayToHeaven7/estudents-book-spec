@@ -1,0 +1,5 @@
+GradeUpdateRequest:
+  type: object
+  properties:
+    grade:
+      type: number

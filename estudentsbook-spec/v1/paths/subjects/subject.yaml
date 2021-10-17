@@ -12,7 +12,7 @@ put:
         type: string
         format: uuid
   requestBody:
-    description: DTO organizational structure with data to update
+    description: DTO subject with data to update
     content:
       application/json:
         schema:
