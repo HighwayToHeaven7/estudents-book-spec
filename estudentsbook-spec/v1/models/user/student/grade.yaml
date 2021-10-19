@@ -6,5 +6,7 @@ Grade:
       format: uuid
     grade:
       type: number
-    title:
+    subject:
+      type: string
+    comment:
       type: string

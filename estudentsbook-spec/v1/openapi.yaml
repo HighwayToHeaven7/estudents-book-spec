@@ -16,12 +16,14 @@ paths:
 
   /students/groups:
     $ref: paths/users/students/students-in-groups.yaml
-  /students/student-uuid/grade/grade-uuid:
+  /students/{student-uuid}/grades/{grade-uuid}:
     $ref: paths/users/students/grade.yaml
+  /students/{student-uuid}/grades:
+    $ref: paths/users/students/grades.yaml
 
   /subjects:
     $ref: paths/subjects/subjects.yaml
-  /subjects/subject-uuid/:
+  /subjects/{subject-uuid}/:
     $ref: paths/subjects/subject.yaml
 
 
