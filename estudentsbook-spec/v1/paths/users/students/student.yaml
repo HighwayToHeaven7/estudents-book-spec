@@ -1,8 +1,8 @@
 get:
-  summary: Get students grades
+  summary: Get students data
   tags:
     - students-query
-  operationId: get_student_grades_by_student_id
+  operationId: get_student_by_id
   parameters:
     - name: student-uuid
       in: path
@@ -11,10 +11,6 @@ get:
       schema:
         type: string
         format: uuid
-    - name: semester
-      in: query
-      schema:
-        type: integer
   responses:
     '200':
       description: List of grades
@@ -23,4 +19,4 @@ get:
           schema:
             type: array
             items:
-              $ref: '../../../models/user/student/grade.yaml#/Grade'
+              $ref: '../../../models/user/student/student.yaml#/Student'

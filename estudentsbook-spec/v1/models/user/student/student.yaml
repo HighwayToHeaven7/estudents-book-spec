@@ -6,3 +6,18 @@ Student:
       format: uuid
     name:
       type: string
+    studentStatus:
+      type: boolean
+    currentSemester:
+      type: integer
+    email:
+      type: string
+    gradesPerSemester:
+      type: object
+      properties:
+        semester:
+          type: integer
+        grades:
+          type: array
+          items:
+            $ref: ./grade.yaml#/Grade

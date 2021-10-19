@@ -20,6 +20,8 @@ paths:
     $ref: paths/users/students/grade.yaml
   /students/{student-uuid}/grades:
     $ref: paths/users/students/grades.yaml
+  /students/{student-uuid}:
+    $ref: paths/users/students/student.yaml
 
   /subjects:
     $ref: paths/subjects/subjects.yaml
