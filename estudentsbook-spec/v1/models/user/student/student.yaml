@@ -4,14 +4,12 @@ Student:
     id:
       type: string
       format: uuid
-    name:
-      type: string
+    personalData:
+      $ref: ../user.yaml#/User
     studentStatus:
       type: boolean
     currentSemester:
       type: integer
-    email:
-      type: string
     gradesPerSemester:
       type: object
       properties:

@@ -6,3 +6,14 @@ User:
       format: uuid
     name:
       type: string
+    surname:
+      type: string
+    role:
+      type: string
+    contact:
+      type: object
+      properties:
+        email:
+          type: string
+        phoneNumber:
+          type: string
