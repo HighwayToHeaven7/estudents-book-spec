@@ -3,4 +3,5 @@ SubjectCreateRequest:
   properties:
     subjectName:
       type: string
+
       # todo ...

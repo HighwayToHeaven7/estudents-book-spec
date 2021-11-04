@@ -2,7 +2,7 @@ get:
   summary: Get list of grups with all students in
   tags:
     - students-query
-  operationId: get_list_of_grups_with_students
+  operationId: get_list_of_groups_with_students
   responses:
     '200':
       content:
