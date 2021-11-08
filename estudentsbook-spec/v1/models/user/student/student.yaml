@@ -7,7 +7,7 @@ Student:
     personalData:
       $ref: ../user.yaml#/User
     studentStatus:
-      type: boolean
+      type: string
     currentSemester:
       type: integer
     gradesPerSemester:

@@ -3,3 +3,4 @@ GradeUpdateRequest:
   properties:
     grade:
       type: number
+      format: double

@@ -3,6 +3,8 @@ GroupWithStudentsResponse:
   properties:
     groupName:
       type: string
+    semesterNumber:
+      type: integer
     students:
       type: array
       items:
