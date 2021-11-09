@@ -10,7 +10,7 @@ patch:
       schema:
         type: string
         format: uuid
-    - name: subject-card-uuid
+    - name: subject-card.yaml-uuid
       in: path
       required: true
       description: The uuid of student subject card

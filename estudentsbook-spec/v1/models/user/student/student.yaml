@@ -10,12 +10,7 @@ Student:
       type: string
     currentSemester:
       type: integer
-    gradesPerSemester:
-      type: object
-      properties:
-        semester:
-          type: integer
-        grades:
-          type: array
-          items:
-            $ref: ./subject-card/grade.yaml#/Grade
+    subjectCards:
+      type: array
+      items:
+        $ref: ./subject-card/subject-card.yaml#/StudentSubjectCardResponse

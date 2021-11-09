@@ -2,7 +2,7 @@ get:
   summary: Get student subject card by semester
   tags:
     - students-query
-  operationId: get_student_student_card_by_student_id
+  operationId: get_student_card_by_student_id_and_semester
   parameters:
     - name: student-uuid
       in: path

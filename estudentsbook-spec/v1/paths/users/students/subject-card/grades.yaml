@@ -1,26 +1,21 @@
-get:
-  summary: Get students grades
+post:
+  summary: Create grade for student in subject card
   tags:
-    - students-query
-  operationId: get_student_grades_by_student_id
-  parameters:
-    - name: student-uuid
-      in: path
-      required: true
-      description: The uuid of student
-      schema:
-        type: string
-        format: uuid
-    - name: subject-card-uuid
-      in: query
-      schema:
-        type: integer
+    - students-command
+  operationId: give_grade_to_student
+  requestBody:
+    description: A JSON object of new grade
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../../models/user/student/subject-card/grade-create-request.yaml#/GradeCreateRequest'
   responses:
-    '200':
-      description: List of subject grades
+    '201':
+      description: Created
       content:
         application/json:
           schema:
-            type: array
-            items:
-              $ref: '../../../../models/user/student/subject-card/grade.yaml#/Grade'
+            $ref: '../../../../models/user/student/subject-card/grade.yaml#/Grade'
+    '409':
+      description: Not created due some validation error

@@ -19,13 +19,13 @@ paths:
   /students/{student-uuid}:
     $ref: paths/users/students/student.yaml
   /students/{student-uuid}/subject-cards/{semester-number}:
+    $ref: paths/users/students/subject-card/subject-card-get-by-semester.yaml
+  /students/{student-uuid}/subject-cards/{subject-card-uuid}:
     $ref: paths/users/students/subject-card/subject-card.yaml
-#  /students/{student-uuid}/subject-cards/{subject-card-uuid}:
-#    $ref: paths/users/students/subject-card/
   /students/{student-uuid}/subject-cards/{subject-card-uuid}/grades/{grade-uuid}:
     $ref: paths/users/students/subject-card/grade.yaml
-#  /students/{student-uuid}/subject-cards/{subject-card-uuid}/grades/new:
-#    $ref: paths/users/students/subject-card/
+  /students/{student-uuid}/subject-cards/{subject-card-uuid}/grades/:
+    $ref: paths/users/students/subject-card/grades.yaml
 
 #  /professor/{professor-uuid}/subjects/:
 #    $ref:

@@ -2,7 +2,7 @@ get:
   summary: Get student subject card
   tags:
     - students-query
-  operationId: get_student_student_card_by_student_id
+  operationId: get_subject_card_details_by_student_id_and_subject_card_id
   parameters:
     - name: student-uuid
       in: path
@@ -11,8 +11,9 @@ get:
       schema:
         type: string
         format: uuid
-    - name: semester-number
+    - name: subject-card-uuid
       in: query
+      required: true
       schema:
         type: integer
   responses:
