@@ -22,6 +22,8 @@ paths:
     $ref: paths/users/students/grades.yaml
   /students/{student-uuid}:
     $ref: paths/users/students/student.yaml
+  /students/{student-uuid}/subject-cards/{semester-number}:
+    $ref: paths/users/students/subject-card.yaml
 
   /subjects:
     $ref: paths/subjects/subjects.yaml
