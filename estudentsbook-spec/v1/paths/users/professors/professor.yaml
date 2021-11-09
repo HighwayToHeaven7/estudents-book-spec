@@ -1,0 +1,21 @@
+get:
+  summary: Get professor data
+  tags:
+    - professor-query
+  operationId: get_professor_data_by_id
+  parameters:
+    - name: professor-uuid
+      in: path
+      required: true
+      description: Professor Uuid
+      schema:
+        type: string
+        format: uuid
+  responses:
+    '200':
+      description: List of professorial subjects
+      content:
+        application/json:
+          type: object
+          schema:
+            $ref: '../../../models/user/professor/professor.yaml#/Professor'

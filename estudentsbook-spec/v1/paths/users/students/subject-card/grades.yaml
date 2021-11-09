@@ -1,5 +1,5 @@
 post:
-  summary: Create grade for student in subject card
+  summary: Create grade for student.yaml in subject card
   tags:
     - students-command
   operationId: give_grade_to_student

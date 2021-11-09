@@ -3,17 +3,17 @@ patch:
     - students-command
   operationId: give_student_grade
   parameters:
-    - name: student-uuid
+    - name: student.yaml-uuid
       in: path
       required: true
-      description: The uuid of student
+      description: The uuid of student.yaml
       schema:
         type: string
         format: uuid
     - name: subject-card.yaml-uuid
       in: path
       required: true
-      description: The uuid of student subject card
+      description: The uuid of student.yaml subject card
       schema:
         type: string
         format: uuid

@@ -1,13 +1,13 @@
 get:
-  summary: Get student subject card
+  summary: Get student.yaml subject card
   tags:
     - students-query
   operationId: get_subject_card_details_by_student_id_and_subject_card_id
   parameters:
-    - name: student-uuid
+    - name: student.yaml-uuid
       in: path
       required: true
-      description: The uuid of student
+      description: The uuid of student.yaml
       schema:
         type: string
         format: uuid
