@@ -11,16 +11,16 @@ get:
       schema:
         type: string
         format: uuid
-    - name: semester
+    - name: subject-card-uuid
       in: query
       schema:
         type: integer
   responses:
     '200':
-      description: List of grades
+      description: List of subject grades
       content:
         application/json:
           schema:
             type: array
             items:
-              $ref: '../../../models/user/student/grade.yaml#/Grade'
+              $ref: '../../../../models/user/student/subject-card/grade.yaml#/Grade'

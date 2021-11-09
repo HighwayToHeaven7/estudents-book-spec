@@ -10,6 +10,13 @@ patch:
       schema:
         type: string
         format: uuid
+    - name: subject-card-uuid
+      in: path
+      required: true
+      description: The uuid of student subject card
+      schema:
+        type: string
+        format: uuid
     - name: grade-uuid
       in: path
       required: true
@@ -21,7 +28,7 @@ patch:
     content:
       application/json:
         schema:
-          $ref: '../../../models/user/student/grade-update-request.yaml#/GradeUpdateRequest'
+          $ref: '../../../../models/user/student/subject-card/grade-update-request.yaml#/GradeUpdateRequest'
     required: true
   responses:
     '200':
@@ -29,7 +36,7 @@ patch:
       content:
         application/json:
           schema:
-            $ref: '../../../models/user/student/grade.yaml#/Grade'
+            $ref: '../../../../models/user/student/subject-card/grade.yaml#/Grade'
     '404':
       description: Not found grade with specific uuid
     '409':

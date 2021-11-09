@@ -18,4 +18,4 @@ Student:
         grades:
           type: array
           items:
-            $ref: ./grade.yaml#/Grade
+            $ref: ./subject-card/grade.yaml#/Grade
