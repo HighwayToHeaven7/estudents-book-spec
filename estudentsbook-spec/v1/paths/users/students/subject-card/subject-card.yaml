@@ -1,0 +1,27 @@
+get:
+  summary: Get student.yaml subject card
+  tags:
+    - students-query
+  operationId: get_subject_card_details_by_student_id_and_subject_card_id
+  parameters:
+    - name: student.yaml-uuid
+      in: path
+      required: true
+      description: The uuid of student.yaml
+      schema:
+        type: string
+        format: uuid
+    - name: subject-card-uuid
+      in: query
+      required: true
+      schema:
+        type: integer
+  responses:
+    '200':
+      description: List of subjects cards
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../../../../models/user/student/subject-card/subject-card.yaml#/StudentSubjectCardResponse'

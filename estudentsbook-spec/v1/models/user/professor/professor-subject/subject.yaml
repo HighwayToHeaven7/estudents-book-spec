@@ -1,10 +1,11 @@
-GroupWithStudentsResponse:
+SubjectResponse:
   type: object
   properties:
-    groupName:
+    id:
       type: string
-    semesterNumber:
-      type: integer
+      format: uuid
+    subjectName:
+      type: string
     students:
       type: array
       items:

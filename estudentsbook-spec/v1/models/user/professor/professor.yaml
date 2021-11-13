@@ -1,0 +1,12 @@
+Professor:
+  type: object
+  properties:
+    id:
+      type: string
+      format: uuid
+    personalData:
+      $ref: ../user.yaml#/User
+    subjects:
+      type: array
+      items:
+        $ref: ./professor-subject/subject.yaml#/SubjectResponse

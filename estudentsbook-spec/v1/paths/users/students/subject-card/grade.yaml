@@ -3,10 +3,17 @@ patch:
     - students-command
   operationId: give_student_grade
   parameters:
-    - name: student-uuid
+    - name: student.yaml-uuid
       in: path
       required: true
-      description: The uuid of student
+      description: The uuid of student.yaml
+      schema:
+        type: string
+        format: uuid
+    - name: subject-card.yaml-uuid
+      in: path
+      required: true
+      description: The uuid of student.yaml subject card
       schema:
         type: string
         format: uuid
@@ -21,7 +28,7 @@ patch:
     content:
       application/json:
         schema:
-          $ref: '../../../models/user/student/grade-update-request.yaml#/GradeUpdateRequest'
+          $ref: '../../../../models/user/student/subject-card/grade-update-request.yaml#/GradeUpdateRequest'
     required: true
   responses:
     '200':
@@ -29,7 +36,7 @@ patch:
       content:
         application/json:
           schema:
-            $ref: '../../../models/user/student/grade.yaml#/Grade'
+            $ref: '../../../../models/user/student/subject-card/grade.yaml#/Grade'
     '404':
       description: Not found grade with specific uuid
     '409':

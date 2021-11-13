@@ -4,10 +4,10 @@ get:
     - students-query
   operationId: get_student_by_id
   parameters:
-    - name: student-uuid
+    - name: student.yaml-uuid
       in: path
       required: true
-      description: The uuid of student
+      description: The uuid of student.yaml
       schema:
         type: string
         format: uuid

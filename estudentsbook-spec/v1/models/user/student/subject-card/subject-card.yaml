@@ -1,0 +1,16 @@
+StudentSubjectCardResponse:
+  type: object
+  properties:
+    groupName:
+      type: string
+    semesterNumber:
+      type: integer
+    subjectName:
+      type: string
+    expectedGrade:
+      type: number
+      format: double
+    grades:
+      type: array
+      items:
+        $ref: './grade.yaml#/Grade'
