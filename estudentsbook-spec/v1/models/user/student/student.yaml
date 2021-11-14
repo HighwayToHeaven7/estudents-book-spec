@@ -6,10 +6,6 @@ Student:
       format: uuid
     personalData:
       $ref: ../user.yaml#/User
-    studentStatus:
-      type: string
-    currentSemester:
-      type: integer
     subjectCards:
       type: array
       items:
