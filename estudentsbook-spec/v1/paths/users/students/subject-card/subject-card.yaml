@@ -11,11 +11,13 @@ get:
       schema:
         type: string
         format: uuid
-    - name: subject-card-uuid
-      in: query
+    - name: subject.yaml-uuid
+      in: path
       required: true
+      description: The uuid of subject.yaml
       schema:
-        type: integer
+        type: string
+        format: uuid
   responses:
     '200':
       description: List of subjects cards
