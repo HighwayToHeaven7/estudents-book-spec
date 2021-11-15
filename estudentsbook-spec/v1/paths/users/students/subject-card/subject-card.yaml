@@ -27,3 +27,7 @@ get:
             type: array
             items:
               $ref: '../../../../models/user/student/subject-card/subject-card.yaml#/StudentSubjectCardResponse'
+    '400':
+      description: Invalid value given in header argument
+    '500':
+      description: Other undefined internal error

@@ -1,7 +1,7 @@
 patch:
   tags:
     - students-command
-  operationId: give_student_grade
+  operationId: update_student_grade
   parameters:
     - name: student.yaml-uuid
       in: path
