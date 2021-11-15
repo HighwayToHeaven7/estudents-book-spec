@@ -3,8 +3,10 @@ GradeCreateRequest:
   properties:
     student-uuid:
       type: string
+      format: uuid
     subject-uuid:
       type: string
+      format: uuid
     grade:
       type: string
     grade_weight:
