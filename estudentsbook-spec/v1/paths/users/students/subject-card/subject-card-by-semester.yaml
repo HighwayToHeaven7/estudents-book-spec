@@ -4,7 +4,7 @@ get:
     - students-query
   operationId: get_student_card_by_student_id_and_semester
   parameters:
-    - name: student.yaml-uuid
+    - name: student-uuid
       in: path
       required: true
       description: The uuid of student.yaml
@@ -12,7 +12,8 @@ get:
         type: string
         format: uuid
     - name: semester-number
-      in: query
+      in: path
+      required: true
       schema:
         type: integer
   responses:
