@@ -4,14 +4,14 @@ get:
     - students-query
   operationId: get_subject_card_details_by_student_id_and_subject_card_id
   parameters:
-    - name: student.yaml-uuid
+    - name: student-uuid
       in: path
       required: true
       description: The uuid of student.yaml
       schema:
         type: string
         format: uuid
-    - name: subject.yaml-uuid
+    - name: subject-uuid
       in: path
       required: true
       description: The uuid of subject.yaml
