@@ -2,9 +2,9 @@ get:
   summary: Get student.yaml subject card by semester
   tags:
     - students-query
-  operationId: get_student_card_by_student_id_and_semester
+  operationId: get_student_card_by_semester
   parameters:
-    - name: student.yaml-uuid
+    - name: student-uuid
       in: path
       required: true
       description: The uuid of student.yaml
@@ -12,7 +12,8 @@ get:
         type: string
         format: uuid
     - name: semester-number
-      in: query
+      in: path
+      required: true
       schema:
         type: integer
   responses:
@@ -24,3 +25,7 @@ get:
             type: array
             items:
               $ref: '../../../../models/user/student/subject-card/subject-card.yaml#/StudentSubjectCardResponse'
+    '400':
+      description: Invalid value given in header argument
+    '500':
+      description: Other undefined internal error

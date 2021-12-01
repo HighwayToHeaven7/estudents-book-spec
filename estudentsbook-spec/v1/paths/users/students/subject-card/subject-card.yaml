@@ -1,21 +1,23 @@
 get:
-  summary: Get student.yaml subject card
+  summary: Get the student's subject card
   tags:
     - students-query
-  operationId: get_subject_card_details_by_student_id_and_subject_card_id
+  operationId: get_subject_card_by_subject_id
   parameters:
-    - name: student.yaml-uuid
+    - name: student-uuid
       in: path
       required: true
       description: The uuid of student.yaml
       schema:
         type: string
         format: uuid
-    - name: subject-card-uuid
-      in: query
+    - name: subject-uuid
+      in: path
       required: true
+      description: The uuid of subject.yaml
       schema:
-        type: integer
+        type: string
+        format: uuid
   responses:
     '200':
       description: List of subjects cards
@@ -25,3 +27,7 @@ get:
             type: array
             items:
               $ref: '../../../../models/user/student/subject-card/subject-card.yaml#/StudentSubjectCardResponse'
+    '400':
+      description: Invalid value given in header argument
+    '500':
+      description: Other undefined internal error

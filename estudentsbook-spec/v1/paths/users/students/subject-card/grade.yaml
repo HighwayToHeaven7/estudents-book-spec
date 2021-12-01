@@ -1,16 +1,16 @@
 patch:
   tags:
     - students-command
-  operationId: give_student_grade
+  operationId: update_student_grade
   parameters:
-    - name: student.yaml-uuid
+    - name: student-uuid
       in: path
       required: true
       description: The uuid of student.yaml
       schema:
         type: string
         format: uuid
-    - name: subject-card.yaml-uuid
+    - name: subject-card-uuid
       in: path
       required: true
       description: The uuid of student.yaml subject card

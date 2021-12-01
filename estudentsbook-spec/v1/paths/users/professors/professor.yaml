@@ -1,7 +1,7 @@
 get:
   summary: Get professor data
   tags:
-    - professor-query
+    - professors-query
   operationId: get_professor_data_by_id
   parameters:
     - name: professor-uuid
