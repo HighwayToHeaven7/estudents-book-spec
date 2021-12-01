@@ -1,5 +1,5 @@
 get:
-  summary: Get student.yaml subject card
+  summary: Get the student's subject card
   tags:
     - students-query
   operationId: get_subject_card_details_by_student_id_and_subject_card_id
