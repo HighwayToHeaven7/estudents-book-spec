@@ -2,7 +2,7 @@ get:
   summary: Get the student's subject card
   tags:
     - students-query
-  operationId: get_subject_card_details_by_student_id_and_subject_card_id
+  operationId: get_subject_card_by_subject_id
   parameters:
     - name: student-uuid
       in: path

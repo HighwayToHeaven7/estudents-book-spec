@@ -2,7 +2,7 @@ get:
   summary: Get student.yaml subject card by semester
   tags:
     - students-query
-  operationId: get_student_card_by_student_id_and_semester
+  operationId: get_student_card_by_semester
   parameters:
     - name: student-uuid
       in: path
