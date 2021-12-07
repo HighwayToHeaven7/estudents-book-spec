@@ -1,0 +1,7 @@
+UserAuthResponse:
+  type: object
+  properties:
+    token:
+      type: string
+    email:
+      type: string

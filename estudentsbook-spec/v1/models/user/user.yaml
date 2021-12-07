@@ -8,12 +8,12 @@ User:
       type: string
     surname:
       type: string
+    email:
+      type: string
     role:
       type: string
     contact:
       type: object
       properties:
-        email:
-          type: string
         phoneNumber:
           type: string
