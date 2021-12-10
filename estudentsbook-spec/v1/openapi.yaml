@@ -16,8 +16,10 @@ tags:
   - name: 'professors-query'
 
 paths:
+  /users:
+    $ref: paths/users/user-create.yaml
   /users/authenticate:
-    $ref: paths/users/user.yaml
+    $ref: paths/users/user-authorize.yaml
   /users/new:
     $ref: paths/users/users.yaml
 

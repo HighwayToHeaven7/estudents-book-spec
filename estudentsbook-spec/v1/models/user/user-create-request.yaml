@@ -1,0 +1,17 @@
+UserCreateRequest:
+  type: object
+  properties:
+    account_status:
+      type: string
+    name:
+      type: string
+    surname:
+      type: string
+    role:
+      type: string
+    email:
+      type: string
+    password:
+      type: string
+    phone_number:
+      type: string
