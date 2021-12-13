@@ -15,7 +15,4 @@ post:
       content:
         application/json:
           schema:
-            type: object
-            items:
-              token:
-                type: string
+            $ref: '../../models/user/authorization/user-auth-post-response.yaml#/UserAuthPostResponse'
