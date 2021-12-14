@@ -1,19 +1,17 @@
-User:
+UserCreateRequest:
   type: object
   properties:
-    id:
+    account_status:
       type: string
-      format: uuid
     name:
       type: string
     surname:
       type: string
-    email:
-      type: string
     role:
       type: string
-    contact:
-      type: object
-      properties:
-        phoneNumber:
-          type: string
+    email:
+      type: string
+    password:
+      type: string
+    phone_number:
+      type: string

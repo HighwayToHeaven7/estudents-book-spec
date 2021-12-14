@@ -1,0 +1,18 @@
+post:
+  summary: Create new user
+  tags:
+    - user-command
+  operationId: create_new_user
+  requestBody:
+    description: DTO to create a new user
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/user/user-create-request.yaml#/UserCreateRequest'
+  responses:
+    '200':
+      description: Successfully created new user
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/user/user.yaml#/User'

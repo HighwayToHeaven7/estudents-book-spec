@@ -1,0 +1,18 @@
+post:
+  summary: Get users credentials and generate JWT token to authorize
+  tags:
+    - user-command
+  operationId: get_new_token
+  requestBody:
+    description: DTO user auth with hashed password and email
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/user/authorization/user-auth-post-request.yaml#/UserAuthPostRequest'
+  responses:
+    '200':
+      description: List of new users
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/user/authorization/user-auth-post-response.yaml#/UserAuthPostResponse'
