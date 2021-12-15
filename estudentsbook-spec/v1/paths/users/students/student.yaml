@@ -17,6 +17,4 @@ get:
       content:
         application/json:
           schema:
-            type: array
-            items:
-              $ref: '../../../models/user/student/student.yaml#/Student'
+            $ref: '../../../models/user/student/student.yaml#/Student'
