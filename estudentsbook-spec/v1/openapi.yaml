@@ -25,7 +25,7 @@ paths:
 
   /users/students/groups:
     $ref: paths/users/students/students-in-groups.yaml
-  /users/students/details:
+  /users/students:
     $ref: paths/users/students/student.yaml
   /users/students/subject-cards/semesters/{semester-number}:
     $ref: paths/users/students/subject-card/subject-card-by-semester.yaml
@@ -36,7 +36,7 @@ paths:
   /users/students/{student-uuid}/subject-cards/{subject-card-uuid}/grades:
     $ref: paths/users/students/subject-card/grades.yaml
 
-  /users/professors/details:
+  /users/professors:
     $ref: paths/users/professors/professor.yaml
 
   /subjects:
