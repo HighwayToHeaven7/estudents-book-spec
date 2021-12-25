@@ -3,14 +3,6 @@ get:
   tags:
     - students-query
   operationId: get_student_by_id
-  parameters:
-    - name: student-uuid
-      in: path
-      required: true
-      description: The uuid of student.yaml
-      schema:
-        type: string
-        format: uuid
   responses:
     '200':
       description: List of grades
