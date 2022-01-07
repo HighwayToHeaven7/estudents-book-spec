@@ -12,8 +12,30 @@ User:
       type: string
     role:
       type: string
+    familyName:
+      type: string
+    sex:
+      type: string
+    residence:
+      type: string
+    studentsAlbumNumber:
+      type: string
+    province:
+      type: string
+    personalIdentityNumber:
+      type: string
+    dateOfBirth:
+      type: string
+    placeOfBirth:
+      type: string
     contact:
       type: object
       properties:
         phoneNumber:
+          type: string
+        anotherPhoneNumber:
+          type: string
+        email:
+          type: string
+        correspondenceAddress:
           type: string
