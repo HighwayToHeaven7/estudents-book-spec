@@ -2,10 +2,10 @@ get:
   summary: Get students data
   tags:
     - students-query
-  operationId: get_student_by_id
+  operationId: get_student
   responses:
     '200':
-      description: List of grades
+      description: Students data
       content:
         application/json:
           schema:

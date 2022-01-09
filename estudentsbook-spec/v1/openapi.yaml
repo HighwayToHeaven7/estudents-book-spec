@@ -20,8 +20,10 @@ paths:
     $ref: paths/users/user-create.yaml
   /users/auth:
     $ref: paths/users/user-authorize.yaml
-  /users/new:
-    $ref: paths/users/users.yaml
+  /users/students/all:
+    $ref: paths/users/lists/students.yaml
+  /users/professors/all:
+    $ref: paths/users/lists/professors.yaml
 
   /users/students/groups:
     $ref: paths/users/students/students-in-groups.yaml
