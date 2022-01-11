@@ -1,8 +1,10 @@
-SubjectCreateRequest:
+SubjectPatchRequest:
   type: object
   properties:
-    subjectName:
+    subject_uuid:
       type: string
+      format: uuid
     professor_uuid:
       type: string
       format: uuid
+

@@ -1,0 +1,19 @@
+post:
+  summary: Create subject card
+  tags:
+    - subject-card-command
+  operationId: create_subject_card_for_student
+  requestBody:
+    description: A JSON object of subject-card
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/subject-card/subject-card-create-request.yaml#/SubjectCardCreateRequest'
+  responses:
+    '201':
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/subject-card/subject-card-create-response.yaml#/SubjectCardCreateResponse'
