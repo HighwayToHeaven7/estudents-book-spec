@@ -4,9 +4,9 @@ Student:
     id:
       type: string
       format: uuid
-    personalData:
+    personal_data:
       $ref: ../user.yaml#/User
-    subjectCards:
+    subject_cards:
       type: array
       items:
         $ref: ./subject-card/subject-card.yaml#/StudentSubjectCardResponse

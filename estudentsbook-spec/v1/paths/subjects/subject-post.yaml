@@ -1,0 +1,21 @@
+post:
+  summary: Create subject
+  tags:
+    - subject-command
+  operationId: create_subject
+  requestBody:
+    description: A JSON object of subject
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/subject/subject-create-request.yaml#/SubjectCreateRequest'
+  responses:
+    '201':
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/subject/subject.yaml#/Subject'
+    '409':
+      description: Not created due some validation error

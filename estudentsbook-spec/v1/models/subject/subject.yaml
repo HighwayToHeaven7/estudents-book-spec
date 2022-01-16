@@ -4,5 +4,5 @@ Subject:
     id:
       type: string
       format: uuid
-    subjectName:
+    subject_name:
       type: string

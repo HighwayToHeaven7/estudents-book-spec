@@ -12,30 +12,30 @@ User:
       type: string
     role:
       type: string
-    familyName:
+    family_name:
       type: string
     sex:
       type: string
     residence:
       type: string
-    studentsAlbumNumber:
+    students_album_number:
       type: string
     province:
       type: string
-    personalIdentityNumber:
+    personal_identity_number:
       type: string
-    dateOfBirth:
+    date_of_birth:
       type: string
-    placeOfBirth:
+    place_of_birth:
       type: string
     contact:
       type: object
       properties:
-        phoneNumber:
+        phone_number:
           type: string
-        anotherPhoneNumber:
+        another_phone_number:
           type: string
         email:
           type: string
-        correspondenceAddress:
+        correspondence_address:
           type: string

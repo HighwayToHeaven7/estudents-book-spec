@@ -1,9 +1,9 @@
 GroupWithStudentsResponse:
   type: object
   properties:
-    groupName:
+    group_name:
       type: string
-    semesterNumber:
+    semester_number:
       type: integer
     students:
       type: array

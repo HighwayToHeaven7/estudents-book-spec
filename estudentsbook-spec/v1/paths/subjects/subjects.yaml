@@ -1,21 +1,14 @@
-post:
-  summary: Create subject
+get:
+  summary: Get list of subjects
   tags:
-    - subject-command
-  operationId: create_subject
-  requestBody:
-    description: A JSON object of subject
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: '../../models/subject/subject-create-request.yaml#/SubjectCreateRequest'
+    - subject-query
+  operationId: get_all_subjects
   responses:
-    '201':
-      description: Created
+    '200':
+      description: List of subjects
       content:
         application/json:
           schema:
-            $ref: '../../models/subject/subject.yaml#/Subject'
-    '409':
-      description: Not created due some validation error
+            type: array
+            items:
+              $ref: '../../models/subject/subject-details.yaml#/SubjectDetails'

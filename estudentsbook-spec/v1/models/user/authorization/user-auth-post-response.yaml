@@ -1,7 +1,7 @@
 UserAuthPostResponse:
   type: object
   properties:
-    user-uuid:
+    user_uuid:
       type: string
       format: uuid
     email:

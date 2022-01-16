@@ -1,13 +1,13 @@
 StudentSubjectCardResponse:
   type: object
   properties:
-    groupName:
+    group_name:
       type: string
-    semesterNumber:
+    semester_number:
       type: integer
-    subjectName:
+    subject_name:
       type: string
-    expectedGrade:
+    expected_grade:
       type: number
       format: double
     grades:

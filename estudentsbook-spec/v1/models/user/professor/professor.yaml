@@ -4,7 +4,7 @@ Professor:
     id:
       type: string
       format: uuid
-    personalData:
+    personal_data:
       $ref: ../user.yaml#/User
     subjects:
       type: array

@@ -1,10 +1,10 @@
 GradeCreateRequest:
   type: object
   properties:
-    student-uuid:
+    student_uuid:
       type: string
       format: uuid
-    subject-uuid:
+    subject_uuid:
       type: string
       format: uuid
     grade:
