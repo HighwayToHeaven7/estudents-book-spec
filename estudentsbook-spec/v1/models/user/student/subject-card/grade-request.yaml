@@ -1,4 +1,4 @@
-GradeCreateRequest:
+GradeRequest:
   type: object
   properties:
     student_uuid:

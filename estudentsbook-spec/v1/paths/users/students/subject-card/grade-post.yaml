@@ -9,7 +9,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: '../../../../models/user/student/subject-card/grade-create-request.yaml#/GradeCreateRequest'
+          $ref: '../../../../models/user/student/subject-card/grade-request.yaml#/GradeRequest'
   responses:
     '201':
       description: Created

@@ -4,16 +4,23 @@ get:
     - students-query
   operationId: get_subject_card_by_subject_id
   parameters:
+    - name: student-uuid
+      in: path
+      required: true
+      description: The uuid of student
+      schema:
+        type: string
+        format: uuid
     - name: subject-uuid
       in: path
       required: true
-      description: The uuid of subject.yaml
+      description: The uuid of subject
       schema:
         type: string
         format: uuid
   responses:
     '200':
-      description: List of subjects cards
+      description: List of subjects cards with grades
       content:
         application/json:
           schema:
