@@ -1,0 +1,8 @@
+SubjectCreateRequest:
+  type: object
+  properties:
+    subject_name:
+      type: string
+    professor_uuid:
+      type: string
+      format: uuid

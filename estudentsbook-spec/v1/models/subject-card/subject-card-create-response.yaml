@@ -1,0 +1,15 @@
+SubjectCardCreateResponse:
+  type: object
+  properties:
+    id:
+      type: string
+      format: uuid
+    student_uuid:
+      type: string
+      format: uuid
+    subject_uuid:
+      type: string
+      format: uuid
+    semester_uuid:
+      type: string
+      format: uuid

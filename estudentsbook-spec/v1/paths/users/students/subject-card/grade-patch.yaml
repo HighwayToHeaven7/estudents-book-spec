@@ -1,0 +1,30 @@
+patch:
+  summary: Update the student's grade
+  tags:
+    - students-command
+  operationId: update_student_grade
+  parameters:
+    - name: grade-uuid
+      in: path
+      required: true
+      description: The uuid of grade to update
+      schema:
+        type: string
+        format: uuid
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: '../../../../models/user/student/subject-card/grade-request.yaml#/GradeRequest'
+    required: true
+  responses:
+    '200':
+      description: Successfully updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../models/user/student/subject-card/grade.yaml#/Grade'
+    '404':
+      description: Not found grade with specific uuid
+    '409':
+      description: Resource not updated due some validation error

@@ -1,0 +1,13 @@
+get:
+  summary: Get professor data
+  tags:
+    - professors-query
+  operationId: get_professor_data_by_id
+  responses:
+    '200':
+      description: List of professorial subjects
+      content:
+        application/json:
+          type: object
+          schema:
+            $ref: '../../../models/user/professor/professor.yaml#/Professor'

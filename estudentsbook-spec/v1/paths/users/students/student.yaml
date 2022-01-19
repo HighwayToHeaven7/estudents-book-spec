@@ -1,0 +1,12 @@
+get:
+  summary: Get students data
+  tags:
+    - students-query
+  operationId: get_student
+  responses:
+    '200':
+      description: Students data
+      content:
+        application/json:
+          schema:
+            $ref: '../../../models/user/student/student.yaml#/Student'

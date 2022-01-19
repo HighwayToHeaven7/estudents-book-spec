@@ -1,0 +1,14 @@
+get:
+  summary: Get list of professors
+  tags:
+    - user-query
+  operationId: get_professors
+  responses:
+    '200':
+      description: List of professors
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '../../../models/user/user.yaml#/User'

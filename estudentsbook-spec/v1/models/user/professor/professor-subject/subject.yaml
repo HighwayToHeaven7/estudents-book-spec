@@ -1,0 +1,12 @@
+SubjectResponse:
+  type: object
+  properties:
+    id:
+      type: string
+      format: uuid
+    subject_name:
+      type: string
+    students:
+      type: array
+      items:
+        $ref: './student.yaml#/Student'

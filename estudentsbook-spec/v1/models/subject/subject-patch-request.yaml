@@ -1,0 +1,10 @@
+SubjectPatchRequest:
+  type: object
+  properties:
+    subject_uuid:
+      type: string
+      format: uuid
+    professor_uuid:
+      type: string
+      format: uuid
+

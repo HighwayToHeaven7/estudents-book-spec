@@ -1,0 +1,41 @@
+User:
+  type: object
+  properties:
+    id:
+      type: string
+      format: uuid
+    name:
+      type: string
+    surname:
+      type: string
+    email:
+      type: string
+    role:
+      type: string
+    family_name:
+      type: string
+    sex:
+      type: string
+    residence:
+      type: string
+    students_album_number:
+      type: string
+    province:
+      type: string
+    personal_identity_number:
+      type: string
+    date_of_birth:
+      type: string
+    place_of_birth:
+      type: string
+    contact:
+      type: object
+      properties:
+        phone_number:
+          type: string
+        another_phone_number:
+          type: string
+        email:
+          type: string
+        correspondence_address:
+          type: string

@@ -1,9 +1,55 @@
 openapi: 3.0.2
 info:
-  title: Title
-  description: Title
+  title: eStudentBookAPI
+  description: eStudentBookAPI provides - student, professor and administrator endpoints with authentication
   version: 1.0.0
+servers:
+  - url: http://localhost:8080
+    description: Local server address
 
 tags:
-  - name: "tag"
-  
+  - name: 'user-query'
+  - name: 'user-command'
+  - name: 'subject-command'
+  - name: 'subject-query'
+  - name: 'students-query'
+  - name: 'students-command'
+  - name: 'professors-query'
+  - name: 'subject-card-command'
+
+paths:
+  /users:
+    $ref: paths/users/user-create.yaml
+  /users/auth:
+    $ref: paths/users/user-authorize.yaml
+  /users/students/all:
+    $ref: paths/users/lists/students.yaml
+  /users/professors/all:
+    $ref: paths/users/lists/professors.yaml
+  /users/students/groups:
+    $ref: paths/users/students/students-in-groups.yaml
+
+  /subject-cards:
+    $ref: paths/subject-cards/subject-card.yaml
+
+  /subjects/{subject-uuid}:
+    $ref: paths/subjects/subject-patch.yaml
+  /subjects:
+    $ref: paths/subjects/subject-post.yaml
+  /subjects/all:
+    $ref: paths/subjects/subjects.yaml
+
+  /users/students:
+    $ref: paths/users/students/student.yaml
+  /users/students/semesters/{semester-number}:
+    $ref: paths/users/students/subject-card/subject-card-by-semester.yaml
+
+  /users/students/{student-uuid}/subjects/{subject-uuid}:
+    $ref: paths/users/students/subject-card/subject-card.yaml
+  /users/students/grades/{grade-uuid}:
+    $ref: paths/users/students/subject-card/grade-patch.yaml
+  /users/students/grades:
+    $ref: paths/users/students/subject-card/grade-post.yaml
+
+  /users/professors:
+    $ref: paths/users/professors/professor.yaml

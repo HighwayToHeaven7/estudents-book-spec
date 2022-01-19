@@ -1,0 +1,17 @@
+GradeRequest:
+  type: object
+  properties:
+    student_uuid:
+      type: string
+      format: uuid
+    subject_uuid:
+      type: string
+      format: uuid
+    grade:
+      type: string
+    grade_weight:
+      type: string
+    grade_type:
+      type: string
+    grade_description:
+      type: string

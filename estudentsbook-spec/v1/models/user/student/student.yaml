@@ -1,0 +1,12 @@
+Student:
+  type: object
+  properties:
+    id:
+      type: string
+      format: uuid
+    personal_data:
+      $ref: ../user.yaml#/User
+    subject_cards:
+      type: array
+      items:
+        $ref: ./subject-card/subject-card.yaml#/StudentSubjectCardResponse

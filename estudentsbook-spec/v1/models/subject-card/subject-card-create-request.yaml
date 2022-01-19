@@ -1,0 +1,11 @@
+SubjectCardCreateRequest:
+  type: object
+  properties:
+    group_name:
+      type: string
+    student_uuid:
+      type: string
+      format: uuid
+    subject_uuid:
+      type: string
+      format: uuid

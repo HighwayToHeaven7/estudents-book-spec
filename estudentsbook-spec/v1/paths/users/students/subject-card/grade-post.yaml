@@ -1,0 +1,21 @@
+post:
+  summary: Create a grade for student
+  tags:
+    - students-command
+  operationId: give_grade_to_student
+  requestBody:
+    description: A JSON object of new grade
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../../../models/user/student/subject-card/grade-request.yaml#/GradeRequest'
+  responses:
+    '201':
+      description: Created
+      content:
+        application/json:
+          schema:
+            $ref: '../../../../models/user/student/subject-card/grade.yaml#/Grade'
+    '409':
+      description: Not created due some validation error

@@ -1,0 +1,28 @@
+patch:
+  summary: Set new professor for a subject
+  tags:
+    - subject-command
+  operationId: set_new_professor_to_subject
+  parameters:
+    - name: subject-uuid
+      in: path
+      required: true
+      description: The uuid of subject to patch
+      schema:
+        type: string
+        format: uuid
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../../models/subject/subject-patch-request.yaml#/SubjectPatchRequest'
+  responses:
+    '201':
+      description: Updated
+      content:
+        application/json:
+          schema:
+            $ref: '../../models/subject/subject.yaml#/Subject'
+    '409':
+      description: Not updated due some validation error

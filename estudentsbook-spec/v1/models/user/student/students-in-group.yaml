@@ -1,0 +1,11 @@
+GroupWithStudentsResponse:
+  type: object
+  properties:
+    group_name:
+      type: string
+    semester_number:
+      type: integer
+    students:
+      type: array
+      items:
+        $ref: './student.yaml#/Student'

@@ -1,0 +1,10 @@
+UserAuthPostResponse:
+  type: object
+  properties:
+    user_uuid:
+      type: string
+      format: uuid
+    email:
+      type: string
+    token:
+      type: string
