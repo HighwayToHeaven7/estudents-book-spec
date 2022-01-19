@@ -1,4 +1,5 @@
 patch:
+  summary: Update the student's grade
   tags:
     - students-command
   operationId: update_student_grade
